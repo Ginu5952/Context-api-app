@@ -5,14 +5,12 @@ import UserInfoContext from './context/UserInfoContext';
 
 export default function App() {
 
-  const userInfo = {username: "Admin", isAdmin:true}
+  const userInfo = { username: "Admin", isAdmin:true };
 
   return (
     <UserInfoContext.Provider value={userInfo}>
       <BlogPage></BlogPage>
-    </UserInfoContext.Provider>
-      
-    
+    </UserInfoContext.Provider> 
   );
 }
 
